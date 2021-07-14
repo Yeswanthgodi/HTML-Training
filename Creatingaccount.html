@@ -1,62 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        #s{
-            color:tomato;
-            text-align: center;
+<style>
+    #s {
+        color: tomato;
+        text-align: center;
+    }
 
-        }
-        body{
-            background-image: url(Rc.jpg);
-            background-size: 100%;
-            background-blend-mode: luminosity;
-        }
-    </style>
-    <title>
-        Create an account
-    </title>
-    <head>
-        <center>  <h1 id="s"> Creating an account </h1> </center>
-       
-    </head>
-    <body>
-        <center><from action="" method="">
-            <label for="Firstname"> Fisrtname: </label>
-            <input type="text" id="Firstname" value="Yeswanth"><br>
-            <br>
-            <label for="middelname"> Middlename: </label>
-            <input type="text" id="Middlename"><br>
-            <br>
-            <label for="Lastname" >Latname: </label>
-            <input type="text" id="Lastname"><br>
-            <br>
-            <label for="Email">Email</label>
-            <input type="email" id="Email"><br>
-            <br>
-        Gender:
-         <br>
-         Male:
-        <input type="radio" name="yesorno"><br>
-        Female:
-        <input type="radio" name="yesorno"><br>
-        Others:
-        <input type="radio" name="yesorno"><br>
-        <br>
-        <label for="dob"> Date of Birt </label>
-        <input type="date" id="dob">
-        <br>
-        <div>Languages familier with </div>
-        <input type="checkbox" name=""> Telugu <br>
-        <input type="checkbox" name=""> English <br>
-        <input type="checkbox" name=""> Hindi <br>
-        <label for="Password">Enter Password:</label>
-        <input type="password" id="Password"><br>
-        <br>
-        <label for="id">Reenter password</label>
-        <input type="password" id="id" ><br>
-        <br>
-        <button>Submit</button>
+    }
+
+    .x {
+        position: absolute;
+        left: 50%;
+    }
+
+    .y {
+        position: absolute;
+        left: 39%;
+    }
+</style>
+<title>
+    Create an account
+</title>
+
+<head>
+    <center>
+        <h1 id="s"> Creating an account </h1>
+    </center>
+
+</head>
+
+<body style="background-image: url(mm.jpg); background-size: auto; background-repeat: repeat;" >
+        <center>
+            <from action="" method="">
+                <label class="y" for="Firstname"> Fisrtname: </label>
+                <input class="x" type="text" placeholder="Firstname" id="Firstname"><br>
+                <br>
+                <label class="y" for="middelname"> Middlename: </label>
+                <input class="x" type="text" placeholder="Middlename" id="Middlename"><br>
+                <br>
+                <label class="y" for="Lastname">Latname: </label>
+                <input class="x" type="text" placeholder="Lastname" id="Lastname"><br>
+                <br>
+                <label class="y" for="Email">Email:</label>
+                <input type="email" placeholder="Email" id="Email"><br>
+                <br>
+                <div style="position: absolute ;left: 39%;">Gender:</div>
+                <select name="Gender" id="Gender">
+                    <option value="Select">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Others</option>
+                </select>
+                <br>
+                <br>
+                <label class="y" for="dob"> Date of Birt </label>
+                <input class="x" type="date" id="dob">
+                <br>
+                <br>
+                <div style="position: absolute;left: 34%;"> Languages familier with: </div>
+                <input style="position: absolute; left: 52%;" type="checkbox" name=""> Telugu <br>
+                <input style="position: absolute; left: 52%;" type="checkbox" name=""> English <br>
+                <input style="position: absolute; left: 52%;" type="checkbox" name=""> Hindi <br>
+                <br>
+                <br>
+                <label style="position: absolute;left: 37%;" for="Password">Enter Password:</label>
+                <input class="x" type="password" id="Password"><br>
+                <br>
+                <label style="position: absolute;left: 37%;" for="id">Reenter password:</label>
+                <input class="x" type="password" id="id"><br>
+                <br>
+                <button>Submit</button>
         </center>
-        
-    </body>
+
+
+</body>
+
 </html>
