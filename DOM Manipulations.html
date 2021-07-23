@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Dom Manipulations
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function fn() {
+            var str1 = document.getElementById("rd1").value;
+            var str2 = document.getElementById("rd2").value;
+            if (rd1.checked == true)
+                alert("The channel selected is " +str1);
+            else if (rd2.checked == true)
+                alert("The radio selected is " +str2);
+            else
+                alert("No radio selected ");
+         }
+    </script>
+    <input id="rd1" name="grp1" type="radio" value="Yesh">Yesh </input>
+    <br>
+    <input id="rd2" name="grp1" type="radio" value="Reddy"> Reddy</input>
+    <br>
+    <button onclick="fn()">Click</button>
+</body>
+
+</html>

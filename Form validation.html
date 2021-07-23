@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form validations in javascript
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        function form()
+        {
+            var str1 = document.getElementById("user");
+            var str2 = document.getElementById("pass");
+             if (str1.value.trim() =="")
+             {
+                alert("Username empty is not  allowed");
+                user.style.border="solid 3px Red";
+                document.getElementById("noo").style.visibility="visible"
+                return false;
+             }
+             else if (str2.value.trim()=="")
+             {
+                  alert("password empty is not allowed");
+                  document.getElementById("oo").style.visibility="visible"
+                  return false;
+             }
+             else if (str2.value.trim().length<5)
+             {
+                 alert("password is too short or weak");
+                 return false;
+             }
+             else
+             {
+                 true;
+             }
+        }
+
+        </script>
+        <form onsubmit="return form()" action="objects.html" >
+        <input id="user" type="text" placeholder="Username">
+        <label id="noo" style="color: red;visibility: hidden;">Invalid Username </label>
+        <br>
+        <br>
+        <input id="pass" type="password" placeholder="Password">
+        <label id="oo" style="color: red;visibility: hidden;">Invalid Password </label>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    </body>
+</html>
