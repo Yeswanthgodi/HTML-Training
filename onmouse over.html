@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mouse over & mouse out</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        function setnew()
+        {
+          document.getElementById("yes").src="yesh1.jpg"
+        }
+        function setold()
+        {
+            document.getElementById("yes").src="create.jpg"
+        }
+        </script>
+        <img id="yes" onmouseover="setnew()" onmouseout="setold()" src="create.jpg" width="300">
+    </body>
+</html>

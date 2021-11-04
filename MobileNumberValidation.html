@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Email validation.
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        function mail()
+        {
+            var ma=document.getElementById("email").Value;
+            var regx = /^([a-zA-Z0-9\.-]+)$/;
+            if (regx.test(ma))
+            {
+                document.getElementById("lbl").innerHTML="valid";
+                document.getElementById("lbl").style.color="green";
+                document.getElementById("lbl").style.visibility="visible";
+            }
+            else
+            {
+                document.getElementById("lbl").innerHTML="Invalid";
+                document.getElementById("lbl").style.color="red";
+                document.getElementById("lbl").style.visibility="visible";
+            }
+
+        }
+
+        </script>
+        <form>
+            <input id="email" placeholder="EMAIL" type="text">
+            <label id="lbl" style="color: red; visibility: hidden;">Invalid</label>
+            <br>
+            <button onclick="mail()" type="button">Submit</button>
+        </form>
+    </body>
+</html>

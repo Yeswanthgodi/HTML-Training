@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Miltiple objects in js </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function bike(bike_brand, bike_model, price) {
+            this.bike_brand = bike_brand;
+            this.bike_model = bike_model;
+            this.price = price;
+
+            this.whichsegment = function () {
+                Document.write("All are under 400cc segment except interceptor")
+            }
+
+        }
+        var c1 = new bike("RE", "Interceptor", 34000);
+        var c2 = new bike("KTM", "duke390", 347000);
+        var c3 = new bike("BAJAJ", "DOminor 400", 246000);
+        var c4 = new bike("KAWASAKI", "Ninja 300", 37000)
+        document.write("<h2>" + c2.price + "")
+        c2.whichsegment();
+
+    </script>
+</body>
+
+</html>

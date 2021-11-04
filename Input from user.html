@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Taking input from user </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function login() {
+            var str = document.getElementById("text1").value;
+            var str2 = document.getElementById("password2").value;
+            if (str==str2)
+            {
+                alert("Both are same");
+            }
+            else 
+            {
+                alert("unable to login");
+            }
+        }
+
+    </script>
+    <input id="text1" placeholder="Enter Something">
+    <br>
+    <input id="password2" type="password" placeholder="Password">
+    <br>
+    <button onclick="login()"> Login </button>
+</body>
+
+</html>

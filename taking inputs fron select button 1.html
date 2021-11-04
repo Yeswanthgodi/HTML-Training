@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Taking inputs from select buttons 1 </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        function click(){
+            var select = document.getElementById("selectbox");
+            alert(select.options[select.selectedindex].value);
+        }
+        </script>
+        <select id="selectbox">
+            <option value="Yeswanth">First name</option>
+            <option value="Reddy">Middle name</option>
+            <option value="Godi">Surname</option>
+            <option value="22">Age</option>
+        </select>
+        <br>
+        <button onclick="click()">Click to know details</button>
+    </body>
+</html>
